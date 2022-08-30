@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import { Avatar, ListItem } from 'react-native-elements'
 
-const CustomListItem = () => {
+const CustomListItem = ({id, chatName, enterChat}) => {
   return (
     <ListItem>
       <Avatar 
@@ -13,6 +13,7 @@ const CustomListItem = () => {
       />
       <ListItem.Content>
         <ListItem.Title style={{fontWeight: "800"}}>Haseeb Khan</ListItem.Title>
+        <ListItem.Subtitle numberOfLines={1} ellipsizeMode="tail">Lorem Ipsum fsdjhjksf sdfjhsdfjh hsjkfhjksdhfhkj</ListItem.Subtitle>
       </ListItem.Content>
     </ListItem>
   )
