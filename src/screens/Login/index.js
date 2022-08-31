@@ -42,7 +42,7 @@ const Login = () => {
       .then((userCredential) => {
         console.log('Signed In');
         const user = userCredential.user
-        console.log(user);
+        // console.log(user);
       })
       .catch((error) => {
         console.log(error)
