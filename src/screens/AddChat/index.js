@@ -6,6 +6,8 @@ import { Button, Icon, Input } from 'react-native-elements'
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from '../../../firebase-config'
 import { getFirestore, collection, doc, setDoc } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth'
+
 
 
 const AddChat = ({ navigation }) => {

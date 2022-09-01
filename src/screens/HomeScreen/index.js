@@ -17,13 +17,11 @@ const HomeScreen = ({ navigation }) => {
   // Get data from firestore (firebase) states
   const [chats, setChats] = useState([])
 
-
   // Firebase
   const app = initializeApp(firebaseConfig)
   const auth = getAuth(app)
   const db = getFirestore(app);
-  const chatsData = collection(db, "chats");
-
+  const chatsData = collection(db, "chats");  
 
   // Signout
   const signOutUser = () => {
