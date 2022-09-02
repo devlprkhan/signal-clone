@@ -51,7 +51,7 @@ const AddChat = ({ navigation }) => {
         }
         />
         </View>
-      <Button buttonStyle={{ backgroundColor: '#2c6bed' }} onPress={createChat} title="Create new Chat" />
+      <Button disabled={!input} buttonStyle={{ backgroundColor: '#2c6bed' }} onPress={createChat} title="Create new Chat" />
     </View>
   )
 }

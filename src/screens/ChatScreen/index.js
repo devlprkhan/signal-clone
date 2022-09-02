@@ -64,7 +64,7 @@ const ChatScreen = ({ navigation, route }) => {
 
     }
 
-    await setDoc(doc(collection(chatRef, route.params.id, "messages")), docData).then(() => console.log("Data Save in firebase")).catch((error) => {
+    await setDoc(doc(collection(chatRef, route.params.id, "messages")), docData).catch((error) => {
       console.log(error);
     })
 
@@ -120,7 +120,7 @@ const ChatScreen = ({ navigation, route }) => {
                     <Text style={styles.recieverText}>{data.message}</Text>
                   </View>
                 ) : (
-                  <View style={styles.sender}>
+                  <View key={id} style={styles.sender}>
                     <Avatar
                       position="absolute"
                       bottom={-15}
